@@ -10,7 +10,7 @@ const intervalId = window.setInterval(function () {
         let last = console.logs[console.logs.length - 1].toString();
         if (last !== undefined && last.startsWith("QUESTION SKILL: ")) {
             const json = JSON.parse(last.substring(16));
-            alert(JSON.stringify(json.answer.correctAnswer));
+            alert(JSON.stringify(json.answer));
         }
         console.logs.pop();
 
